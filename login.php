@@ -55,7 +55,7 @@ $action = '';
 						<input type="password" class="form-control" id="registerPassword2" name="registerPassword2">
 					  </div>
 					  <a href="login.php" class="btn btn-primary">Login</a>
-					 <!-- <button type="button" id="register" class="btn btn-success">Register</button> -->
+					  <button type="button" id="register" class="btn btn-success">Register</button>
 					 <!-- <a href="login.php?action=resetPassword" class="btn btn-warning">Reset Password</a> -->
 					  <button type="reset" class="btn">Clear</button>
 					</form>
@@ -93,7 +93,7 @@ $action = '';
 						<input type="password" class="form-control" id="resetPasswordPassword2" name="resetPasswordPassword2">
 					  </div>
 					  <a href="login.php" class="btn btn-primary">Login</a>
-					  <!--<a href="login.php?action=register" class="btn btn-success">Register</a> -->
+					  <a href="login.php?action=register" class="btn btn-success">Register</a>
 					 <!-- <button type="button" id="resetPasswordButton" class="btn btn-warning">Reset Password</button> -->
 					  <button type="reset" class="btn">Clear</button>
 					</form>
@@ -137,7 +137,7 @@ $action = '';
 				<input type="password" class="form-control" id="loginPassword" name="loginPassword">
 			  </div>
 			  <button type="button" id="login" class="custom-btn btn-1 btn-primary">Login</button>
-			  <!-- <a href="login.php?action=register" class="btn btn-success">Register</a> -->
+			   <!--<a href="login.php?action=register" class="btn btn-success">Register</a> -->
 			 <!-- <a href="login.php?action=resetPassword" class="btn btn-warning">Reset Password</a> -->
 			  <button type="reset" class="custom-btn btn-6">Clear</button>
 			</form>
