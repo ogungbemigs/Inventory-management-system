@@ -138,6 +138,7 @@ $(document).ready(function() {
                 $("#desktop").html(data.desktop);
                 $("#laptop").html(data.laptop);
                 $("#eset").html(data.yes);
+                $("#allInOne").html(data.allInOne);
             }
         });
     }, 1000)

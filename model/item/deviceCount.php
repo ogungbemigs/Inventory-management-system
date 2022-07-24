@@ -23,12 +23,19 @@
 		// If data is found for the given item number, return it as a json object
 		$array['desktop'] = $deviceTypeStatement->rowCount();
 
-		$deviceTypeSql = 'SELECT device_type FROM item WHERE device_type = "Laptop"';
+		$deviceTypeSql = 'SELECT device_type FROM item WHERE device_type = "laptop"';
 		$deviceTypeStatement = $conn->prepare($deviceTypeSql);
 		$deviceTypeStatement->execute();
 		
 		// If data is found for the given item number, return it as a json object
 		$array['laptop'] = $deviceTypeStatement->rowCount();
+
+		$deviceTypeSql = 'SELECT device_type FROM item WHERE device_type = "All in One"';
+		$deviceTypeStatement = $conn->prepare($deviceTypeSql);
+		$deviceTypeStatement->execute();
+		
+		// If data is found for the given item number, return it as a json object
+		$array['allInOne'] = $deviceTypeStatement->rowCount();
 
 		$deviceTypeSql = 'SELECT eset_status FROM item WHERE eset_status = "Yes"';
 		$deviceTypeStatement = $conn->prepare($deviceTypeSql);
@@ -36,6 +43,8 @@
 		
 		// If data is found for the given item number, return it as a json object
 		$array['yes'] = $deviceTypeStatement->rowCount();
+
+		
         
         
         
