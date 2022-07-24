@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2022 at 10:50 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+-- Generation Time: Jul 24, 2022 at 09:46 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -89,13 +89,16 @@ CREATE TABLE `item` (
 --
 
 INSERT INTO `item` (`productID`, `device_code`, `staff_name`, `branchOffice`, `dept`, `device_type`, `device_ram`, `device_storage`, `os`, `os_status`, `mac_address`, `eset_status`, `ad_status`, `printer`, `scanner`, `imageURL`, `status`) VALUES
-(2, 'SAMD001', 'SHEHU USMAN OSIDI', 'Head Office', 'SA to MD', '', '', '', '', '', '', '', '', '', '', 'imageNotAvailable.jpg', ''),
+(2, 'SAMD001', 'SHEHU USMAN OSIDI', 'Head Office', 'SA TO MD', 'Laptop', '8GB', '500GB', 'Windows 10', 'Activated', '', 'No', 'No', '', '', 'imageNotAvailable.jpg', ''),
 (3, 'SAMD002', 'KAREEM, IBRAHIM AJIBOLA', 'Head Office', 'SA to MD', 'Laptop', '4GB', '1TB', 'Windows 8', 'Activated', '68-17-29-25-AB-34', 'No', 'No', 'LASERJET M402', '', 'imageNotAvailable.jpg', 'Active'),
 (4, 'SAMD003', 'ONYEZE, CHIMEZIE MARIA (N', 'LagosZonalOffic', 'SA to MD', 'Laptop', '8GB', '1TB', 'Windows 10', 'Activated', 'D8-C0-A6-8D-D2-D3', 'No', 'No', 'LASERFET PRO M402', '', 'imageNotAvailable.jpg', 'Active'),
 (5, 'SAMD004', 'APAOKAGI - YINUSA, OLUWAK', 'Head Office', 'SA to MD', 'Laptop', '4GB', '1TB', 'Windows 10', 'Activated', '08-71-90-C4-9F-5F', 'No', 'No', '', '', 'imageNotAvailable.jpg', 'Active'),
 (6, 'SAMD005', 'HAMEED ABDULMALIK', 'Head Office', 'SA to MD', 'Desktop', '4GB', '1TB', 'Windows 10', 'Not Activated', '?9C-7B-EF-56-E4-76', 'Yes', 'No', 'HP LASERJET P2015', '', 'imageNotAvailable.jpg', 'Active'),
 (7, 'SAMD006', 'GINIKANWA TREASURE OFONIM', 'Head Office', 'SA to MD', 'Desktop', '4GB', '1TB', 'Windows 10', 'Not Activated', 'C4-65-16-29-DC-77', 'Yes', 'No', 'LASERJET PRO M402', 'HP SCANJET 5590', 'imageNotAvailable.jpg', 'Active'),
-(8, '112', 'Pascal', 'Head Office', 'ICT', 'Laptop', '4GB', '1TB', 'Windows 7', 'Activated', 'Federal Mortgage Bank. Plot 26', 'Yes', 'No', '12334555', '5465543434', 'imageNotAvailable.jpg', 'Disabled');
+(8, '112', 'Pascal', 'Head Office', 'ICT', 'Laptop', '4GB', '1TB', 'Windows 7', 'Activated', 'Federal Mortgage Bank. Plot 26', 'Yes', 'No', '12334555', '5465543434', 'imageNotAvailable.jpg', 'Disabled'),
+(9, 'oyo3', 'Abdul Malik Ooreoluwa', 'Oyo', '0', 'Desktop', '8GB', '1TB', 'Windows 10', 'Activated', 'er:Er:er:er:er:er', 'No', 'No', '402DN', 'None', 'imageNotAvailable.jpg', 'Active'),
+(10, 'ICT003', 'John Nwobi', 'Head Office', 'ICT', 'All in One', '4GB', '500GB', 'Windows 10', 'Activated', 'er:Er:er:er:er:er', 'No', 'No', '402DN', 'None', 'imageNotAvailable.jpg', 'Disabled'),
+(11, 'ICT10', 'Kingsley Amedu', 'Head Office', 'ICT', 'All in One', '4GB', '500GB', 'Windows 10', 'Activated', 'er:Er:er:er:er:er', 'Yes', 'No', '402DN', 'None', 'imageNotAvailable.jpg', 'Active');
 
 -- --------------------------------------------------------
 
@@ -286,7 +289,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `productID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `productID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `purchase`
