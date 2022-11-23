@@ -1143,7 +1143,6 @@ function getItemDetailsToPopulate() {
             $('#productID').val(data.productID);
             $('#deviceCode').val(data.device_code);
             $('#staffName').val(data.staff_name);
-            //$('#location').val(data.branchOffice).trigger("chosen:updated");
             $('#office').val(data.branchOffice).trigger("chosen:updated");
             $('#department').val(data.dept).trigger("chosen:updated");
             $('#deviceType').val(data.device_type).trigger("chosen:updated");

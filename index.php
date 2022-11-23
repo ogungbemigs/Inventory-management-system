@@ -233,7 +233,7 @@
 									</select>
 								  </div>
 								<div class="form-group col-md-3">
-								  <label for="esetStatus">ESET Status<span class="requiredIcon">*</span></label>
+								  <label for="esetStatus">SOPHOS Status<span class="requiredIcon">*</span></label>
 								  <select id="esetStatus" name="esetStatus" class="form-control chosenSelect">
 										<option value="0">Select</option>
 										<option value="Yes">Yes</option>

@@ -14,7 +14,7 @@
 	define('DB_USER', 'root');
 	
 	// DB password
-	define('DB_PASSWORD', 'p4m18@bd');
+	define('DB_PASSWORD', '');
 	
 	// DB name
 	define('DB_NAME', 'inventory');

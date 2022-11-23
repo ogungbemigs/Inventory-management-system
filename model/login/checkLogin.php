@@ -14,7 +14,7 @@
 		if(!empty($loginUsername) && !empty($loginUsername)){
 			
 			// Sanitize username
-			$loginUsername = filter_var($loginUsername, FILTER_SANITIZE_STRING);
+			$loginUsername = htmlspecialchars($loginUsername);
 			
 			// Check if username is empty
 			if($loginUsername == ''){

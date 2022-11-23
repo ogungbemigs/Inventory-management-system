@@ -20,7 +20,7 @@
 						<th>Operating System</th>
 						<th>Windows Activation Status</th>
 						<th>Mac Address</th>
-						<th>ESET Status</th>
+						<th>Sophos Status</th>
 						<th>Active Directory</th>
 						<th>Printer</th>
 						<th>Scanner</th>
@@ -68,7 +68,7 @@
 							<th>Operating System</th>
 							<th>Windows Activation Status</th>
 							<th>Mac Address</th>
-							<th>ESET Status</th>
+							<th>Sophos Status</th>
 							<th>Active Directory</th>
 							<th>Printer</th>
 							<th>Scanner</th>
