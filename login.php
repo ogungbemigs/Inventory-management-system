@@ -7,7 +7,7 @@
 		$_SESSION['start'] = time();
 		$_SESSION['expire'] = $_SESSION['start'] + (10*60);
 		
-		header('Location: dashboard.php');
+		header('Location: login.php');
 		exit();
 	}
 	

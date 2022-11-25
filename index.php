@@ -1,5 +1,14 @@
 <?php
 	session_start();
+if( isset( $_SESSION['counter'] ) ) {
+    //$_SESSION['counter'] += 1;
+}else {
+    //$_SESSION['counter'] = 1;
+}
+
+//$msg = "You have visited this page ".  $_SESSION['counter'];
+//$msg .= "in this session.";
+
 	// Redirect the user to login page if he is not logged in.
 	if(!isset($_SESSION['loggedIn'])){
 		header('Location: login.php');
@@ -16,7 +25,6 @@
 	require 'inc/navigation.php';
 ?>
 	<div class="sidebar">
-	<div class="col-lg-2">
 		<h1 class="my-4"></h1>
 			<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			  <a class="nav-link active" id="v-pills-dashboard-tab" data-toggle="pill" href="#v-pills-dashboard" role="tab" aria-controls="v-pills-dashboard" aria-selected="true">Dashboard</a>
@@ -24,21 +32,23 @@
 			  <a class="nav-link" id="v-pills-search-tab" data-toggle="pill" href="#v-pills-search" role="tab" aria-controls="v-pills-search" aria-selected="false">Search</a>
 			  <a class="nav-link" id="v-pills-reports-tab" data-toggle="pill" href="#v-pills-reports" role="tab" aria-controls="v-pills-reports" aria-selected="false">Reports</a>
 			</div>
-		</div>
 	</div>
     <!-- Page Content -->
     <div class="container-fluid page-content">
 	  <div class="row">
-		<div class="col-lg-10">
+		<div class="col-lg-12">
 			<div class="tab-content" id="v-pills-tabContent">
 				<div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
 					<div class="card card-outline-secondary my-4 count">
 						<div class="card-header">Dashboard</div>
-						<div class="counters">
+                        <div class="row">
+						<div class="col-sm-3 col-12">
 				  			<div class="cards">
 								<div class="card-head">Devices</div>
 								<div class="card-details" id="devices"></div>
-							</div> 
+							</div>
+                        </div>
+                        <div class="col-sm-3 col-12">
 							<div class="cards">
 								<div class="card-head">Device Type</div>
 								<div class="card-details">
@@ -47,17 +57,23 @@
 									<h4 class="count_title">All in One: <b id="allInOne"></b></h4>
 								</div>
 							</div>
+                        </div>
+                        <div class="col-sm-3 col-12">
 							<div class="cards">
 								<div class="card-head">Activated Windows</div>
 								<div class="card-details" id="os_status"></div>
-							</div> 
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-12">
 							<div class="cards">
 								<div class="card-head">Antivirus Status</div>
 								<div class="card-details" id="eset"></div>
 							</div>
-						</div> 
+                        </div>
+                        </div>
+						</div>
 					</div>
-				</div>
+
 			  	<div class="tab-pane fade" id="v-pills-item" role="tabpanel" aria-labelledby="v-pills-item-tab">
 					<div class="card card-outline-secondary my-4">
 				  		<div class="card-header">Item Details</div>
